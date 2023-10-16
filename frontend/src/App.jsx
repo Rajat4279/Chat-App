@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { REACT_APP_PROJECT_ID } from "../config";
+import { REACT_APP_PROJECT_ID } from "../config.js";
 
 import AuthPage from "./Pages/AuthPage/AuthPage";
 import ChatsPage from "./Pages/ChatPage/ChatPage";

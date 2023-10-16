@@ -10,8 +10,13 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors({
+    origin: ["https://chat-app-backend-kappa.vercel.app"],
+    methods: ["POST"],
+    credentials: true
+}));
+
 app.use(express.json());
-app.use(cors({ origin: true }));
 
 app.post("/authenticate", async (req, res) => {
     const { username } = req.body;

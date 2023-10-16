@@ -2,11 +2,12 @@ import axios from "axios";
 import "./AuthPage.css";
 
 function AuthPage(props) {
+  axios.defaults.withCredentials = true;
   const onSubmit = (e) => {
     e.preventDefault();
     const { value } = e.target[0];
     axios
-      .post("http://localhost:4000/authenticate", {
+      .post("https://chat-app-backend-kappa.vercel.app/authenticate", {
         username: value,
       })
       .then((r) => props.onAuth({ ...r.data, secret: value }))
