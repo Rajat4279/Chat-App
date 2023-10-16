@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: ["https://chat-app-backend-kappa.vercel.app"],
+    origin: ["https://chat-app-frontend-bice.vercel.app/"],
     methods: ["POST"],
     credentials: true
 }));
