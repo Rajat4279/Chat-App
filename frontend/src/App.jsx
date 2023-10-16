@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { w3cwebsocket } from "websocket";
 import "./App.css";
 import AuthPage from "./Pages/AuthPage/AuthPage";
 import ChatsPage from "./Pages/ChatPage/ChatPage";
