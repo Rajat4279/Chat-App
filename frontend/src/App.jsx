@@ -1,8 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 import AuthPage from "./Pages/AuthPage/AuthPage";
 import ChatsPage from "./Pages/ChatPage/ChatPage";
