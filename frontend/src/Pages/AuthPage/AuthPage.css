@@ -1,0 +1,89 @@
+main {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(13, 13, 13);
+    background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(38, 38, 38, 1) 61%, rgba(69, 69, 69, 1) 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 30rem;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    color: #fff;
+    border: 5px solid #f0960f;
+    border-radius: 40px 40px 40px 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.authForm>* {
+    margin: 1rem;
+    padding: 10px;
+}
+
+.authHeading {
+    font-size: 3.5rem;
+}
+
+.authSubHeading {
+    font-size: 1.5rem;
+}
+
+.authSubmitButton {
+    background: rgb(184, 124, 14);
+    color: white;
+}
+
+.authSubmitButton:hover {
+    cursor: pointer;
+    background-color: #f0960f;
+}
+
+@media only screen and (max-width:768px) {
+    main {
+        position: static;
+    }
+
+    .authForm {
+        position: static;
+        width: 23rem;
+        margin: 0 auto;
+    }
+
+    .authHeading {
+        font-size: 3rem;
+    }
+
+    .authSubHeading {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .authForm {
+        position: static;
+        width: 17rem;
+        height: 20rem;
+        margin: 0 auto;
+    }
+
+    .authForm>* {
+        margin: 0.5rem;
+        padding: 8px;
+    }
+
+    .authHeading {
+        font-size: 2.5rem;
+    }
+
+    .authSubHeading {
+        font-size: 1rem;
+    }
+}
