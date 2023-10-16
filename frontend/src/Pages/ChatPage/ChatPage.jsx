@@ -4,7 +4,7 @@ const ChatsPage = (props) => {
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
       <PrettyChatWindow
-        projectId={props.project_id} // Access environment variable
+        projectId={REACT_APP_PROJECT_ID}
         username={props.user.username}
         secret={props.user.secret}
         style={{ height: "100%" }}
