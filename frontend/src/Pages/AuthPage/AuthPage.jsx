@@ -10,7 +10,7 @@ function AuthPage(props) {
     };
     axios
       .post(
-        "https://chat-app-backend-kappa.vercel.app/authenticate",
+        "https://chat-app-backend-one-flame.vercel.app/authenticate",
         {
           username: value,
         },
